@@ -1,0 +1,62 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+nav {
+  background: #9e0e5e;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+}
+nav ul.submenu {
+  position: fixed;
+  z-index: -1;
+  background: #000;
+  left: 0px;
+  width: 100%;
+  top: 20px;
+  text-align: left;
+  padding: 41px 21px 17px;
+  display: none;
+}
+nav ul.submenu li {
+  display: block;
+  /* float: left; */
+}
+nav ul.submenu.hoverstate {
+  display: block;
+}
+
+.box {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+  background: #000;
+}
+
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+
+h2 {
+  font: primarfont;
+}
+
+/*# sourceMappingURL=style.css.map */

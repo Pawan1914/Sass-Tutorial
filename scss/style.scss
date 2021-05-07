@@ -1,0 +1,60 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+$primarfont: 40px;
+$secondryfont: 35px;
+
+body{ padding: 0px; margin: 0px;}
+
+nav { background: #9e0e5e;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0px;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+        display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+  }
+    
+    
+    ul.submenu{
+            
+    position: fixed;
+    z-index: -1;
+    background: #000;
+    left: 0px;
+    width: 100%;
+    top: 20px;
+    text-align: left;
+    padding: 41px 21px 17px;  display: none;
+    }
+    ul.submenu li {
+    display: block;
+    /* float: left; */
+}
+    ul.submenu.hoverstate{ display: block;}
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+.box { @include transform(rotate(30deg)); background: #000; }
+
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+h2{font:  primarfont};
